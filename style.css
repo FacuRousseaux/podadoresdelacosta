@@ -303,7 +303,8 @@ a {
 @media screen and (max-width: 768px) {
 
     .intro {
-        background-position: right 10% center;
+        background-image: none;
+        /* background-position: right 10% center; */
     }
 
     .intro__section {
@@ -374,6 +375,7 @@ a {
 @media screen and (max-width: 852px) {
 
     .about-us {
+        background-image: none;
         background-position: 100% 45%;
     }
     
