@@ -3,6 +3,7 @@ const nav = document.querySelector('.nav');
 const navBar = document.querySelector('.nav__bar');
 const toggle = document.getElementById('toggle');
 const navLink = document.querySelector('.nav .nav__link');
+const header = document.querySelector('.header');
 
 toggle.addEventListener('click', () => {
     if(body.classList.contains('overflow')) {
@@ -24,8 +25,8 @@ toggle.addEventListener('click', () => {
 window.onscroll = function() {
     let y = window.scrollY;
     if (y > 750) {
-        nav.classList.add('nav--fixed')
+        header.classList.add('nav--fixed')
     } else {
-        nav.classList.remove('nav--fixed')
+        header.classList.remove('nav--fixed')
     }
 };
